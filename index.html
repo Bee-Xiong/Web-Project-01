@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="logo">logo</h1>
+            <div class="header-space"></div>
+            <div class="nav">
+                <button>Home</button>
+                <button>Services</button>
+                <button>Contact</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-info">
+                <h1>Plumbing & Heating</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestiae voluptatum dolorem id, officiis, in animi doloribus quia ex veniam unde nostrum, fuga ab incidunt.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact">
+                    <input id="name" type="text" placeholder="Name"/>
+                    <input id="email" type="email" placeholder="Email"/>
+                    <input id="phone" type="text" placeholder="Phone"/>
+                    <select id="services">
+                        <option value="water-leak">Water Leak</option>
+                        <option value="water-line" selected>Water Line</option>
+                        <option value="water-heater">Water Heater Tank</option>
+                        <option value="washer-repair">Washer Repair</option>
+                    </select>
+                    <textarea placeholder="Message"></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div><br/><br/><br/>
+        <div class="skill-container">
+            <div class="skill">
+                <div class="skill-img"><img src="https://media.istockphoto.com/id/1201171402/vector/plumber-isometric.jpg?s=612x612&w=is&k=20&c=SQhlk54vYsvVoIckXslqEJsPy0uIV5ik30MQydt84t0="></div>
+                <div class="skill-content">
+                    <div><h3>Emergency Response</h3></div>
+                    <hr>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem similique, consequuntur vero ipsum, necessitatibus sed ea nobis quaerat, cum sequi mollitia nostrum nihil quos. Officia facere tenetur placeat. Impedit, at.</p>
+                    </div>
+                    <button>more info</button>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-img"><img src="https://media.istockphoto.com/id/459374957/photo/plumber-or-electrician-standing-next-to-van.jpg?s=1024x1024&w=is&k=20&c=cmlCqYR1hRf01tzxxQdufEUEe2B0yPDnySgHj79MMAY="></div>
+                <div class="skill-content">
+                    <div><h3>Licensed & Certified Technicians</h3></div>
+                    <hr>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem similique, consequuntur vero ipsum,
+                            necessitatibus sed ea nobis quaerat, cum sequi mollitia nostrum nihil quos. Officia facere tenetur
+                            placeat. Impedit, at.</p>
+                    </div>
+                    <button>more info</button>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-img"><img src="https://www.shutterstock.com/shutterstock/photos/235174015/display_1500/stock-photo-plumbing-tools-arranged-on-house-plans-whit-wrench-and-pipe-cutter-235174015.jpg"></div>
+                <div class="skill-content">
+                    <div><h3>Fast & Reliable</h3></div>
+                    <hr>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem similique, consequuntur vero ipsum,
+                            necessitatibus sed ea nobis quaerat, cum sequi mollitia nostrum nihil quos. Officia facere tenetur
+                            placeat. Impedit, at.</p>
+                    </div>
+                    <button>more info</button>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="info-container">
+            <div class="info">
+                <div class="info-img active" id="img1">
+                    <img src="https://media.yourobserver.com/img/photos/2022/05/05/287803_standard_t1100.jpeg?31a214c4405663fd4bc7e33e8c8cedcc07d61559">
+                </div>
+                <div class="info-img" id="img2">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2498819097/display_1500/stock-photo-find-your-way-location-marking-with-a-pin-on-a-map-with-routes-adventure-discovery-navigation-2498819097.jpg">
+                </div>
+                <div class="info-img" id="img3">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1455171386/display_1500/stock-photo-call-center-service-photo-of-customer-support-or-sales-agent-group-of-callers-or-receptionist-1455171386.jpg">
+                </div>
+                <div class="info-content">
+                    <div class="tab-container">
+                        <button class="btn active" id="btn1" data-id="#tab1" onclick="handleTab(event)">Company</button>
+                        <button class="btn rad-left" id="btn2" data-id="#tab2" onclick="handleTab(event)">Location</button>
+                        <button class="btn" id="btn3" data-id="#tab3" onclick="handleTab(event)">Contact</button>
+                    </div>
+                    <div class="content active" id="tab1">
+                        <h3>Company</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempore corporis architecto at velit quaerat nostrum vitae debitis alias cumque enim delectus quia ex odio, voluptatibus, facilis cupiditate aliquam dolorem porro quam ea. Architecto velit amet ratione molestiae officia aut a maxime recusandae porro quaerat saepe impedit fugiat excepturi, doloremque iure aperiam asperiores harum deleniti sint culpa iusto minima ex ipsa magni. Deleniti cupiditate facilis ullam praesentium magni numquam voluptatum.</p>
+                    </div>
+                    <div class="content" id="tab2">
+                        <h3>Location</h3>
+                        <ul>
+                            <li>Minneapolis</li>
+                            <li>Saint Paul</li>
+                            <li>Minnetonka</li>
+                            <li>Eden Prairie</li>
+                            <li>Plymouth</li>
+                            <li>Eagan</li>
+                            <li>Maple Grove</li>
+                            <li>Bloomington</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="tab3">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>Phone:&emsp;651 - 424 - 5525</li>
+                            <li>Email: &emsp;customer.servies@gmail.com</li>
+                            <li>Location: &emsp;Minnesota</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="data-container">
+            <div class="data-content">
+                <div><img src="./images/Icon 12.png"></div>
+                <div class="data-info">
+                    <h1>Water Leak</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora distinctio, nobis velit numquam eaque asperiores quo optio ut id est! Culpa quos voluptates odit corporis nam voluptate, expedita exercitationem ut repellendus qui assumenda quasi est!</p>
+                </div>
+                <div id="price">
+                    <p>$100 <span style="color:red">OFF</span></p>
+                </div>
+                <div><button value="water-leak" onclick="selection(event)">SCHEDULE SERVICE</button></div>
+            </div>
+            <div class="data-content">
+                <div><img src="./images/Icon 14.png"></div>
+                <div class="data-info">
+                    <h1>Water Line</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere eaque error voluptates
+                        recusandae consequuntur architecto fugit doloribus. Laborum, nam?</p>
+                </div>
+                <div id="price">
+                    <p>10% <span style="color:red">OFF</span></p>
+                </div>
+                <div><button value="water-line" onclick="selection(event)">SCHEDULE SERVICE</button></div>
+            </div>
+            <div class="data-content">
+                <div><img src="./images/Icon 18.png"></div>
+                <div class="data-info">
+                    <h1>Water Heater</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quas! Sint nobis incidunt enim vero cumque quos temporibus? Reprehenderit qui consequuntur ducimus voluptates delectus obcaecati.</p>
+                </div>
+                <div id="price">
+                    <p>25% <span style="color:red">OFF</span></p>
+                </div>
+                <div><button value="water-heater" onclick="selection(event)">SCHEDULE SERVICE</button></div>
+            </div>
+            <div class="data-content">
+                <div><img src="./images/Icon 11.png"></div>
+                <div class="data-info">
+                    <h1>Washer Repair</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolores doloremque repellat reprehenderit quaerat quos cupiditate tempore veritatis itaque quo quas eos temporibus deserunt doloribus cumque. Sapiente distinctio consequatur eaque.</p>
+                </div>
+                <div id="price">
+                    <p>$50 <span style="color:red">OFF</span></p>
+                </div>
+                <div><button value="washer-repair" onclick="selection(event)">SCHEDULE SERVICE</button></div>
+            </div>
+        </div><br/><br/>
+        <div class="footer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium nostrum est qui rem iure enim molestias quos incidunt consectetur!</p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/* .root {
+    #26547c
+    #ef476f
+    #ffd166
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2000px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #26547c;
+    color: white;
+}
+
+.header-space {
+    width: 1000px;
+    height: auto;
+}
+
+#logo {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+}
+
+.nav button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    font-size: 1.25rem;
+}
+
+.nav button:hover {
+    background-color: #ffd166;
+}
+
+
+/* Main */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #26547c;
+    width: 2000px;
+    height: 700px;
+    margin-bottom: 50px;
+    gap: 20px;
+    background: url("https://www.shutterstock.com/shutterstock/photos/1825510838/display_1500/stock-photo-plumbing-equipment-on-a-blueprint-panoramic-banner-1825510838.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-info {
+    padding: 20px;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #26547c;
+}
+
+.main-info h1 {
+    color: #ef476f;
+    font-size: 4rem;
+    letter-spacing: 10px;
+}
+
+.main-info p {
+    font-size: 1.25rem;
+    padding: 20px;
+    color: white;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #ffd166;
+}
+
+button:not(.btn) {
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    padding: 20px 40px 20px 20px;
+    border-radius: 10px;
+    background-color: #ef476f;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+}
+
+input, select, textarea {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+}
+
+.contact button {
+    align-self: flex-start;
+    width: 75px;
+    height: 25px;
+}
+
+/* skill */
+.skill-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 50px;
+    width: 1000px;
+    position: relative;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 0 0 20px -10px black;
+}
+
+.skill-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.skill-img>*{
+    width: 300px;
+    height: auto;
+}
+
+.skill-content {
+    padding: 20px;
+    background-color: #bcd5eb;
+}
+
+.skill h3 {
+    text-align: center;
+}
+
+.skill:nth-child(2) .skill-content {
+    padding-top: 0;
+}
+
+.skill button {
+    width: 5rem;
+    height: 2rem;
+}
+
+/* info */
+.info-container {
+    width: 100%;
+    height: 500px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info-img.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+}
+
+.info-img> * {
+    object-fit: fill;
+}
+
+.info-img {
+    display: none;
+}
+
+#img2>* {
+    margin-top: 50px;
+}
+
+#img3> * {
+    margin: 50px 500px 0 0;
+}
+
+.info-content {
+    width: 50%;
+    height: 100%;
+    background-color: #26547c;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+#btn1, #btn2, #btn3 {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+.btn.active {
+    color: white;
+    background-color: #26547c;
+}
+
+button.rad-right {
+    border-radius: 0 0 10px 0;
+}
+
+button.rad-left {
+    border-radius: 0 0 0 10px;
+}
+
+button.rad-left.rad-right {
+    border-radius: 0 0 10px 10px;
+}
+
+.content.active{
+    display: block;
+    color: white;
+    padding: 24px;
+    height: 100%;
+}
+
+.content h3 {
+    color: #ef476f;
+    font-size: 2rem;
+}
+
+.content {
+    display: none;
+}
+
+/* Data */
+.data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 50px;
+    gap: 30px;
+}
+
+.data-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.data-info {
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+}
+
+.data-info h1 {
+    color: #ef476f;
+}
+
+#price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    width: 250px;
+    border: 4px dashed black;
+}
+
+.data-content img {
+    width: 100px;
+}
+
+.data-content button {
+    width: 250px;
+    height: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2000px;
+    height: 100px;
+    color: white;
+    padding: 0 30px;
+    font-style: italic;
+    font-size: 0.75rem;
+    background-color: #26547c;
+}
